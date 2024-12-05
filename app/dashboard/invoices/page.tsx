@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Page(props: {
-  searchParams?: Promise<{
+  searchParams: Promise<{
     query?: string;
     page?: string;
   }>;
