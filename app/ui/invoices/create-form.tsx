@@ -20,7 +20,7 @@ export default function Form(
     errors: {},
   };
 
-  const [state, formAction] = useActionState(createInvoice, initialState);
+  const [state, formAction] = useActionState((createInvoice as any), initialState);
 
   console.log(state);
   return (
